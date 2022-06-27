@@ -8,3 +8,6 @@ brain-games: #коммент
 
 publish: #комманда опубликует? файл
 	npm publish --dry-run
+
+lint: # запускаем eslint
+	npx eslint
