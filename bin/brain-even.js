@@ -35,7 +35,8 @@ for (let i = 0; i < 3; i += 1) {
     else {
         isUserWin = false;
         console.log(`${userAnswer} is wrong answer ;(. Correct answer is ${correctAnswer})`);
-        breack;
+        console.log(`Let\`s try again, ${userName}`);
+        break;
     }
 }
 
