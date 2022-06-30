@@ -11,15 +11,13 @@ const getUserName = () => {
 };
 
 export default (questionText, game) => {
-
   welcomeUser();
   const userName = getUserName();
   const roundNum = 3;
   console.log(questionText);
   let userAnswer;
 
-  for(let i = 0; i < roundNum; i += 1) {
-
+  for (let i = 0; i < roundNum; i += 1) {
     const [questionContent, target] = game();
     console.log(`Question: ${questionContent}`);
 
@@ -35,32 +33,3 @@ export default (questionText, game) => {
     console.log(`Congratulations, ${userName}`);
   }
 };
-
-
-
-
-
-export const startQuestion = (questionText, questionContent, target) => {
-  let userAnswer;
-  let isUserWin;
-  console.log(questionText);
-
-  for (let i = 0; i < 3; i += 1) {
-    console.log(`Question: ${questionContent[i]}`);
-    userAnswer = readlineSync.question('');
-
-    if (userAnswer === target[i]) {
-      console.log('Correct!');
-    } else {
-      isUserWin = false;
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer is ${target[i]})`);
-
-      return isUserWin;
-    }
-  }
-
-  isUserWin = true;
-  return isUserWin;
-};
-
-
