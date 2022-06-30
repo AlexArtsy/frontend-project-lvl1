@@ -6,16 +6,16 @@ const gcdGame = () => {
   const a = Math.floor(Math.random() * 100);
   const b = Math.floor(Math.random() * 100);
 
-  if (a === 0 || b === 0) {
-    gcdGame();
-  }
-
   const questionContent = `${a} ${b}`;
   let target;
 
   for (let [i] = [a, b].sort(); i > 0; i -= 1) {
+    if (i === 0) { // может возникнуть так, что a  или b будет равно нулю
+      target = 1; // тогда наибольшим общим делителем будет единица
+      break;
+    }
     if (a % i === 0 && b % i === 0) {
-      target = i.toString();
+      target = i;
       break;
     }
   }

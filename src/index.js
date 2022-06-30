@@ -23,7 +23,7 @@ export default (questionText, game) => {
 
     userAnswer = readlineSync.question('');
 
-    if (userAnswer === target) {
+    if (userAnswer === target.toString()) {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${target}.`);
