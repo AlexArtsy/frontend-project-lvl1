@@ -30,6 +30,6 @@ export default (questionText, game) => {
       console.log(`Let\`s try again, ${userName}`);
       return;
     }
-    console.log(`Congratulations, ${userName}`);
   }
+  console.log(`Congratulations, ${userName}`);
 };
