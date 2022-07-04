@@ -11,11 +11,11 @@ const progressionGame = () => {
 
   for (let i = 0; i < 10; i += 1) {
     if (target === i) {
-      randomProgression += ' .. ';
+      randomProgression += '.. ';
       target = nextNum;
       nextNum += stepOfProg;
     } else {
-      randomProgression += ` ${nextNum} `;
+      randomProgression += `${nextNum} `;
       nextNum += stepOfProg;
     }
   }
