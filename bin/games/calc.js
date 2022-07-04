@@ -10,7 +10,7 @@ const isCalcGame = () => {
 
   const randomIndex = Math.floor(Math.random() * 2);
   const target = operations[randomIndex].toString();
-  const randomOperation = `${a}${signs[randomIndex]}${b}`;
+  const randomOperation = `${a} ${signs[randomIndex]} ${b}`;
 
   return [randomOperation, target];
 };
