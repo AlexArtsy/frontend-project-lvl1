@@ -9,4 +9,4 @@ const isEvenGame = () => {
   return [number, target];
 };
 
-export default () => gameEngine(questionText, isEvenGame); 
+export default () => gameEngine(questionText, isEvenGame);
