@@ -31,5 +31,5 @@ export default (questionText, game) => {
       return;
     }
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
 };
